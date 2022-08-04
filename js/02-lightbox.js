@@ -19,6 +19,10 @@ function createGallery(galleryItems) {
 }
 
 var lightbox = new SimpleLightbox(".gallery a", {
+  captions: true,
+  captionType: "attr",
+  captionPosition: "bottom",
   captionDelay: 250,
-  captionData: "alt",
+  captionsData: "alt",
+  docClose: true,
 });
